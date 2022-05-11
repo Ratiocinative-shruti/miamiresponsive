@@ -1,0 +1,2369 @@
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/font-light/NeueHaasDisplay-Light.eot');
+    src: url('../fonts/font-light/NeueHaasDisplay-Light.eot') format('embedded-opentype'),
+        url('../fonts/font-light/NeueHaasDisplay-Light.woff2') format('woff2'),
+        url('../fonts/font-light/NeueHaasDisplay-Light.woff') format('woff'),
+        url('../fonts/font-light/NeueHaasDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/font-bold/NeueHaasDisplay-Bold.eot');
+    src: url('../fonts/font-bold/NeueHaasDisplay-Bold.eot') format('embedded-opentype'),
+        url('../fonts/font-bold/NeueHaasDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/font-bold/NeueHaasDisplay-Bold.woff') format('woff'),
+        url('../fonts/font-bold/NeueHaasDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/font-roman/NeueHaasDisplay-Roman.eot');
+    src: url('../fonts/font-roman/NeueHaasDisplay-Roman.eot') format('embedded-opentype'),
+        url('../fonts/font-roman/NeueHaasDisplay-Roman.woff2') format('woff2'),
+        url('../fonts/font-roman/NeueHaasDisplay-Roman.woff') format('woff'),
+        url('../fonts/font-roman/NeueHaasDisplay-Roman.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.videos-div{
+    display: none;
+}
+
+
+body{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    /*border-left: 1px solid green;
+    border-right: 1px solid green;*/
+}
+.body{
+    max-width: 1920px;
+    margin: 28px 50px 50px 50px;
+}
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .container
+  {
+      margin: 0 auto;
+      max-width: 1400px;
+      /*border-left: 1px solid green;
+      border-right: 1px solid green;*/
+  }
+  /*toggle*/
+  body.active{
+      overflow: hidden;
+  }
+  .icon-ham.active {
+    padding: 37px 39px 33px;
+    border-right:none;
+}
+header.active{
+    background: black;
+}
+  .toggle-cont{
+      position: absolute;
+      width: 100%;
+      max-width: 1920px;
+  }
+  .links-toggle {
+    position: relative;
+    z-index: 9;
+    top: 104px;
+    /* left: 20%; */
+}
+.ul-toggle ul{
+    display: block;
+}
+.ul-toggle {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100vh;
+    background: black;
+    opacity: 0;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+}
+.ul-toggle ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 90px;
+    color: white;
+}
+.ul-toggle ul li a:hover{
+    color: #F1C40F;
+}
+.hamburger-icon.b.active {
+    opacity: 0;
+}
+.hamburger-icon.a.active {
+    transform: rotate(45deg);
+}
+.hamburger-icon.c.active   {
+    transition-delay: rotate;
+    transform: rotate(-45deg);
+    margin-top: -25px;
+}
+.ul-toggle.active{
+    opacity: 1;
+    margin-top: 13px;
+}
+  /* header section */
+  .hhh , .icons-mobile , .right-head-content-mobile{
+    display: none;
+}
+  .heade-div {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1920px;
+    top: 0;
+}
+header {
+    z-index: 999;
+    width: 100%;
+    min-height: 118px;
+    max-width: 1920px;
+    position: fixed;
+    transition: 0.5s ease-out;
+    border-bottom: 1px solid white;
+}
+.right-head-content-1 , .right-head-content-2 {
+    display: flex;
+}
+ .hamburger-icon {
+    min-width: 39px;
+    min-height: 3px;
+    background-color: white;
+    margin: 9.5px 0;
+    transition: 0.7s ease-out;
+  }
+  .logo-top {
+    height: auto;
+}
+  .text-condosforsale h6 ,
+   .text-condosforrent h6 ,
+   .ul-divs ul li h6 ,
+   .btn-1 h6 ,
+   .btn-2 h6 ,
+   .btn-3 h6 ,
+   .btn-4 h6  {
+      margin: 0;
+      transition: 0.7s ease-in;
+  }
+.text-condosforsale h6 a ,
+.text-condosforrent h6 a
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-weight: 500;
+}
+.buttons-2 h6 a ,
+.buttons-3 h6 a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.btn-1 , .btn-2 , .btn-3 ,.btn-4 {
+    display: flex;
+    align-items: center;
+    transition: 0.7s ease-out;
+}
+
+#size-14{
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+.icon-ham{
+    padding: 37px 39px 33px;
+    border-right: 1px solid white;
+    transition: 0.7s ease-out;
+    cursor: pointer;
+}
+.icon-1-img {
+    display: flex;
+}
+.text-condosforsale ,
+.text-condosforrent{
+    border-left: 1px solid white;
+    padding: 37.5px 36px 0 38px;
+    transition: 0.3s ease-in;
+}
+.logo-div-1 {
+    padding-left: 14px;
+    padding-top: 13px;
+}
+.right-head{
+    display: flex;
+}
+.buttons-1n2 h6 a , .buttons-3n4 h6 a{
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn-1 h6{
+    position: relative;
+    padding-left: 32px;
+}
+.btn-1 h6::before{
+    content: '';
+    position: absolute;
+    min-width: 20px;
+    background-image: url('../images/img/globe.png');
+    background-repeat: no-repeat;
+    min-height: 20px;
+    left: 0;
+    top: 2px;
+}
+.btn-2 h6{
+    position: relative;
+    padding-left: 30px;
+}
+.btn-2 h6::before{
+    content: '';
+    position: absolute;
+    min-width: 20px;
+    background-image: url('../images/img/search.png');
+    background-repeat: no-repeat;
+    min-height: 20px;
+    left: 0;
+    top: 4px;
+}
+.btn-3 h6{
+    position: relative;
+    padding-left: 30px;
+}
+.btn-3 h6::before{
+    content: '';
+    position: absolute;
+    min-width: 20px;
+    background-image: url('../images/img/account.png');
+    background-repeat: no-repeat;
+    min-height: 20px;
+    left: 2px;
+    top: 4px;
+}
+.btn-4 h6{
+    position: relative;
+    padding-left: 30px;
+}
+.btn-4 ::before{
+    content: '';
+    position: absolute;
+    min-width: 20px;
+    background-image: url('../images/img/call-white.png');
+    background-repeat: no-repeat;
+    min-height: 20px;
+    left: -5px;
+}
+.btn-3 , .btn-4{
+    padding: 18px 42px 15.7px 51px;
+}
+.btn-1 , .btn-3 {
+    border-bottom: 1px solid white;
+}
+.text-condosforrent , .buttons-1n2{
+    border-right: 1px solid white;
+}
+.btn-1, .btn-2{
+    padding: 18px 31px 16px 41px;
+}
+img.logo-div-1{
+    height: auto;
+}
+.right-head-1370 , .right-head-1000  ,.right-head-content-1370 {
+    display: none;
+}
+
+
+/*hover header*/
+.arw-white-box:hover , .lets-talk-a:hover{
+    background:linear-gradient( #F1C40F ,#DC4A13 );
+    color: #000000;
+    transition: 0.7s ease-out;
+}
+.arw-white-box:hover::after{
+    content: '';
+    background-image: url(../images/img/arrow-black.png);
+    right: 0px;
+}
+.lets-talk-a:hover::after{
+    content: '';
+    background-image: url(../images/img/arrow-black.png);
+    right: 26px;
+}
+.new-img:hover .arw-img::after {
+    right: 65px;
+    transition: 0.4s ease-out;
+}
+.new-img:hover .arw-img2::after {
+    right: 55px;
+    transition: 0.4s ease-out;
+}
+.new-img:hover .arw-img3::after {
+    right: 65px;
+    transition: 0.4s ease-out;
+}
+.new-img .arw-img::after , .new-img .arw-img2::after , .new-img .arw-img3::after  , .img-4-cont h3 a::after{
+    transition: 0.4s ease-in;
+}
+
+.text-condosforsale:hover , 
+.text-condosforrent:hover , 
+.btn-1:hover ,
+.btn-3:hover ,
+.btn-4:hover ,
+.btn-2:hover{
+    background:linear-gradient( #F1C40F ,#DC4A13) ;
+    transition: 0.7s ease-out;
+}
+.text-condosforsale:hover a ,
+.text-condosforrent:hover a ,
+.btn-4:hover a,
+.btn-2:hover a,
+.btn-3:hover a,
+.btn-1:hover a{
+    color: black;
+}
+.btn-1:hover h6 a::before {
+    content: '';
+    position: absolute;
+    min-width: 20px;
+    background-image: url('../images/img/globe-black.png');
+    background-repeat: no-repeat;
+    min-height: 20px;
+    left: 0;
+    top: 2px;
+}
+.btn-2:hover h6 a::before{
+    content: '';
+    position: absolute;
+    min-width: 20px;
+    background-image: url('../images/img/search-black.png');
+    background-repeat: no-repeat;
+    min-height: 20px;
+    left: 0;
+    top: 4px;
+}
+.btn-3:hover h6 a::before {
+    content: '';
+    position: absolute;
+    min-width: 20px;
+    background-image: url('../images/img/user-black.png');
+    background-repeat: no-repeat;
+    min-height: 20px;
+    left: 2px;
+    top: 4px;
+}
+.btn-4:hover h6 a::before{
+    background-image:url('../images/img/call.png');
+}
+
+.miami-investment h2 a:hover::after{
+    right: 20px;
+    transition: 0.7s ease-in;
+}
+
+.img-4-cont h3 a:hover::after{
+    right:-72px;
+    transition: 0.7s ease-in;
+}
+.all-articles p a:hover::after {
+    right: -86px;
+    transition: 0.7s  ease-in;
+}
+.all-articles-video:hover::after {
+    right: -90px;
+    transition: 0.7s ease-in;
+}
+
+.lets-talk a:hover::after {
+    right: 25px;
+    transition: 0.7s ease-in; 
+}
+.body2-a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #475a6d;
+    z-index: -1;
+    transform-origin: left;
+    transition: transform 0.7s ease ;
+    transform: scaleX(1);
+}
+.body2-a:hover::before{
+    transform-origin: right;
+    transition: transform 0.7s ease ;
+    transform: scaleX(0); 
+}
+.read-more a:hover::after {
+    right: -64px;
+    transition: 0.7s ease-in;
+}
+.subscribe-box h2 a:hover , .uldiv-bottom ul li a:hover , .links-icon i:hover{
+    color: #d25f28;
+}
+.btn1-search:hover , .btn1-rank:hover , .btn1-stats:hover{
+    transition: 0.9s ease-in;
+    background:linear-gradient( #F1C40F ,#DC4A13) ;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px;
+}
+.btn1-search:hover h3, .btn1-rank:hover h3, .btn1-stats:hover h3{
+    color: #000000;
+}
+.btn1-search:hover h4, .btn1-rank:hover h4, .btn1-stats:hover h4{
+    color: #000000;
+}
+.icon-ham:hover .hamburger-icon{
+    background-color: #d25f28;
+    width: 100%;
+    transition: 0.7s ease-in;
+}
+form:hover::after{
+    cursor: pointer;
+    color: #d25f28;
+    font-size: 18px;
+}
+.neighborhood-images img:hover , .images-content img:hover {
+    transform: scale(1.01);
+    transition: 0.7s ease-out;
+    box-shadow: 0 5px 10px rgb(0 0 0);
+    opacity: 0.85;
+}
+.img-1 img:hover.arw-img::after {
+    right: 65px;
+    transition: 0.2s all ease-in;
+}
+.neighborhood-images img{
+    transition: 0.5s ease-in;   
+}
+.yellow:hover , .rent-a-mobile:hover , a.sale-a-mobile:hover{
+    color: #F1C40F;
+    background-color: #d25f28;
+    cursor: pointer;
+    transition: 0.7s ease-in;
+}
+.orange:hover , .sale-a-mobile:hover {
+    color:  #d25f28;
+    background-color: #F1C40F;
+    cursor: pointer;
+    transition: 0.7s ease-in;
+}
+/* banner image*/
+.banner-img{
+    background-image: url('../images/img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 710px;
+    position: relative;
+    text-align: center;
+}
+.banner-heading-content {
+    top: 418px;
+    position: absolute;
+    right: 0%;
+    margin: auto;
+    width: max-content;
+    left: 10px;
+    text-align: center;
+}
+.heading1 h1{
+    font-size: 100px;
+    letter-spacing: 4px;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.heading0banner-h4{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-transform: uppercase;
+    position: relative;
+    top: -33px;
+    right: 2px;
+}
+.heading0banner-h4::before{
+    content: '';
+    position: absolute;
+    width: 21.4%;
+    left:20px;
+    top: 17.2px;
+    height: 3px;
+    background-color: white;
+}
+.heading0banner-h4::after{
+    content: '';
+    position: absolute;
+    width: 21.4%;
+    right: 20px;
+    top: 17.2px;
+    height: 3px;
+    background-color: white;
+}
+.heading1 {
+    min-width: 670px;
+}
+/* 3 buttons */
+.btn1-search h3 , .btn1-rank h3 , .btn1-stats h3{
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 200;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.btn1-search a , .btn1-rank a , .btn1-stats a{
+    text-decoration: none;
+}
+.btn-search-cont{
+    position: relative;
+    right: -39px;
+    top: 6px;
+    max-width: auto;
+}
+.btn-search-cont::before{
+    content: '';
+    position: absolute;
+    min-width: 53px;
+    background-image: url('../images/img/search2.png');
+    background-repeat: no-repeat;
+    min-height: 53px;
+    left: -78px; 
+}
+.btn-ranking-cont{
+    position: relative;
+    top: 6px;
+    max-width: auto;
+    left: 44px;
+}
+.btn-ranking-cont::before{
+    content: '';
+    position: absolute;
+    min-width: 53px;
+    background-image: url('../images/img/ranking.png');
+    background-repeat: no-repeat;
+    min-height: 53px;
+    left: -84px; 
+}
+.btn-stats-cont{
+    position: relative;
+    left: 44px;
+    top: 6px;
+    max-width: auto;
+}
+.btn-stats-cont::before{
+    content: '';
+    position: absolute;
+    min-width: 53px;
+    background-image: url('../images/img/stats.png');
+    background-repeat: no-repeat;
+    min-height: 53px;
+    left: -79px; 
+}
+.btn1-search h4 ,  .btn1-rank h4 , .btn1-stats h4{
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    position:relative ;
+    top: 10px;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.btn1-search{
+    background-color: black;
+    padding: 0 109.5px 40px;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 0.5, 0.1);
+}
+.btn1-rank{
+    background-color: #1d1d1d;
+    padding: 0 103px;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 0.5, 0.1);
+}
+.btn1-stats{
+    background-color: #2e2e2e;
+    padding: 0 124px;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 0.5, 0.1);
+}
+.buttons3 {
+    display: flex;
+    padding-top: 18px;
+    justify-content: space-between;
+}
+.miami-investment h2{
+    text-align: center;
+}
+.miami-investment h2 a{
+    font-size: 80px;
+    text-decoration: none;
+    line-height: 88px;
+    color: #000000;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.miami-investment {
+    padding-top: 85px;
+    position: relative;
+}
+/*.miami-investment a::after{
+    content: '';
+    position: absolute;
+    min-width: 81px;
+    background-image: url('../images/img/arrow.png');
+    background-repeat: no-repeat;
+    min-height: 58px;
+    right:66px;
+    bottom: 17px;
+}*/
+/*video*/
+.video-large {
+    padding-top: 40px;
+    width: 100%;
+}
+.neighborhoods h2{
+    font-size: 80px;
+    line-height: 88px;
+    color: #000000;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.neighborhoods {
+    padding: 35px 0;
+}
+/* neighborhoods images */
+.img2-3-4 {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imgs-all {
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.iframe-1{
+    max-width: 1821px;
+    min-height: 1023px;
+    width: 100% ;
+}
+.iframe-2{
+    min-height: 403px;
+    width: 100%;
+}
+.img-1 {
+    position: relative;
+    width: 46%;
+}
+.img-1-cont {
+    bottom: 5px;
+    position: absolute;
+    left: 50px;
+}
+.neighborhood-images {
+    padding-top: 40px;
+}
+.neighborhood-images h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+}
+.neighborhood-images h4 a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.arw-img{
+    position: relative;
+    top: -14px;
+}
+.arw-img::after{
+    content: '';
+    position: absolute;
+    min-width: 30px;
+    background-image: url('../images/img/arrow-white.png');
+    background-repeat: no-repeat;
+    min-height: 18px;
+    right:85px;
+    top: 10px;
+}
+.img2-div-cont , .img-4 ,.img-3  {
+    position: relative;
+    cursor: pointer;
+}
+
+.img-2-cont {
+    bottom: 5px;
+    position: absolute;
+    left: 50px;
+}
+.arw-img2{
+    position: relative;
+    top: -10px;
+}
+.arw-img2::after{
+    content: '';
+    position: absolute;
+    min-width: 78px;
+    background-image: url('../images/img/arrow-white.png');
+    background-repeat: no-repeat;
+    min-height: 18px;
+    right:80px;
+    top: 12px;
+}
+.img-3-cont {
+    bottom: 5px;
+    position: absolute;
+    left: 50px;
+}
+.arw-img3{
+    position: relative;
+    top: -15px;
+}
+.arw-img3::after{
+    content: '';
+    position: absolute;
+    min-width: 52px;
+    background-image: url('../images/img/arrow-white.png');
+    background-repeat: no-repeat;
+    min-height: 18px;
+    right:85px;
+    top: 10px;
+}
+.img-4-cont {
+    bottom: 18px;
+    position: absolute;
+    left: 50px;
+}
+.img-4-cont h3 a{
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+
+}
+.img-4-cont h3 a::after{
+    content: '';
+    position: absolute;
+    min-width: 30px;
+    background-image: url('../images/img/arrow-black.png');
+    background-repeat: no-repeat;
+    min-height: 18px;
+    right:-52px;
+    bottom: 10px;
+}
+.images-2-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 47%;
+}
+
+/*grey section lucas */
+.grey-div{
+    min-height: 790px;
+    background-color: #f4f2f7;
+    margin: 83px 0 106px;
+}
+/*
+.lucas-photo{
+    background-image: url('../images/img/lucas-img.jpg');
+    background-repeat: no-repeat;
+    min-height: 690px;
+    position: relative;
+    width: 100%;
+}*/
+.lucas-cont {
+    max-width: 618px;
+    margin-top: -6px;
+}
+.lucas-cont h2{
+    font-size: 80px;
+    line-height: 88px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 53px;
+    letter-spacing: -2px;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.lucas-cont p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    color: #000000;
+    padding-left: 2.7px;
+    font-weight: 400;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.lucas-photo-cont {
+    display: flex;
+    padding: 47px 0;
+    justify-content: space-between;
+}
+.btn-div-lm-b a{
+    font-size: 22px;
+    line-height: 88px;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: black;
+    padding: 26px 41px;
+    padding-right: 96px;
+    transition: 0.7s ease-out;
+}
+.arw-white-box{
+    position: relative;
+    transition: 0.7s ease-out;
+}
+.btn-div-lm-b {
+    margin-top: 13px;
+    padding-left: 5px;
+    overflow: hidden;
+    max-width: fit-content;
+}
+.arw-white-box::after{
+    content: '';
+    position: absolute;
+    min-width: 30px;
+    background-image: url('../images/img/arrow-white.png');
+    background-repeat: no-repeat;
+    min-height: 18px;
+    top: 29px;
+    right: 46px;
+}
+/* pre construction - owl carousel*/
+.pre-construct-section h2{
+    font-size: 80px;
+    line-height: 88px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-left: -5px;
+    margin-bottom: 105px;
+    font-weight: 300;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.card h5{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    padding-top: 21px;
+}
+ .card img {
+    min-height: 732px;
+}
+.img-owl .owl-theme .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    top: -195px;
+    right: 0px;
+}
+.img-car-arrow1{
+    padding-right: 48px;
+}
+/* news section*/
+.div-news-heading h4{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 88px;
+    margin-top: 98px;
+    margin-bottom: 0;
+    color: #000000;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.all-articles p a, .all-articles-video p a{
+    font-size: 22px;
+    line-height: 88px;
+    color: #000000;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    transition: 0.7s ease-in;
+}
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.all-articles , .all-articles-video{
+    position: relative;
+    right: 60px;
+}
+.all-articles p a::after{
+    content: '';
+    position: absolute;
+    min-width: 30px; 
+    background-image: url('../images/img/arrow-black.png');
+    background-repeat: no-repeat;
+    min-height: 18px;
+    top: 54px;
+    right: -66px;
+    transition: 0.7s ease-out;
+}
+.all-articles-video::after{
+    content: '';
+    position: absolute;
+    min-width: 40px; 
+    background-image: url('../images/img/video-arrow.png');
+    background-repeat: no-repeat;
+    min-height: 18px;
+    top: 54px;
+    right: -70px;
+    transition: 0.7s ease-out;
+}
+.images-content {
+    display: flex;
+}
+.img-3-news {
+    margin-left: -4px;
+    position: relative;
+}
+.img-2-news {
+    margin-left: -3px;
+    position: relative;
+}
+.img-1-news{
+    position: relative;
+}
+.newsimgcont1 h6 ,
+ .newsimgcont2 h6 , 
+ .newsimgcont3 h6{
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 100;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.img2-3-flex {
+    display: flex;
+}
+.newsimgcont1 h4 ,
+ .newsimgcont2 h4 , 
+ .newsimgcont3 h4 {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #ffffff;
+    margin: 10px 0 27px;
+    font-weight: 100;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.read-more a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 40px;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.read-more a::after{
+    content: '';
+    position: absolute;
+    min-width: 27px;
+    background-image: url('../images/img/arrow-white.png');
+    background-repeat: no-repeat;
+    min-height: 16px;
+    top: 4px;
+    right: -44px;
+}
+.newsimgcont1 , .newsimgcont2 , .newsimgcont3{
+    position: absolute ;
+    bottom: 42px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+.all-articles p{
+    margin-bottom: 13px;
+}
+/* vdeio media*/
+.div-video-media-heading h4{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 88px;
+    margin-bottom: 38px;
+    margin-left: -3px;
+    margin-top: 97px;
+    color: #000000;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.h4-date{
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    line-height: 40px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.h3-heading{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-top: 0;
+    color: #000000;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+}
+.videos-div {
+    display: flex;
+    justify-content: space-between;
+}
+/* second grey div */
+.grey-div2{
+    background-color: #ededf1;
+    width: 50%;
+} 
+.grey-content h2{
+    font-size: 80px;
+    line-height: 88px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 54px;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.grey-content p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    color: #000000;
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+.think-of-selling {
+    display: flex;
+    margin-top: 110px;
+}
+.grey-content {
+    margin: 150px 47px 0;
+}
+.lets-talk-a {
+    font-size: 22px;
+    line-height: 88px;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: black;
+    position: relative;
+    padding: 25px 107px 25px 45px;
+    font-weight: 600;
+    transition: 0.7s ease-out;
+}
+.lets-talk-a::after{
+    content: '';
+    position: absolute;
+    min-width: 35px;
+    background-image: url(../images/img/button-arrow.png);
+    background-repeat: no-repeat;
+    min-height: 16px;
+    right: 37px;
+    top: 32px;
+}
+.lets-talk {
+    transition: 0.7s ease-out; 
+}
+/*bottom*/
+.bottom{
+    background-color: #000000;
+    margin-top: 46px;
+    min-height: 722px;
+}
+.subscribe-box h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: 'Neue Haas Grotesk Display Pro';  
+}
+form {
+    position: relative;
+    max-width: 371px;
+}
+input.form2 {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 17px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
+form::after{
+    content: '\f178';
+    position: absolute;
+    min-width: 20px;
+    /*background-image: url(../images/img/footer-arrow.png);
+    background-repeat: no-repeat;*/
+    min-height: 16px;
+    font-family: FontAwesome;
+    top: 5px;
+    color: white;
+    right: 0;
+}
+::placeholder {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: 'Neue Haas Grotesk Display Pro';  
+}
+.logo-btm{
+    width: auto;
+}
+
+.subscribe-box p , .subscribe-box h2 a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';  
+}
+.links-icon i{
+    color: white;
+    font-size: 40px;
+    padding-top: 4px ;
+}
+.content-box-bottom {
+    min-height: 650px;
+    display: flex;
+}
+.links{
+    padding: 65px 0 35px;
+}
+p#space {
+    padding-top: 31px;
+}
+.uldiv-bottom ul li a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';  
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul {
+    padding: 0;
+    display: flex;
+    column-gap: 23px;
+}
+.logos-3 {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    padding-top: 30px;
+}
+.btm-lines h3{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #ffffff;
+    font-family: 'Neue Haas Grotesk Display Pro';  
+    text-transform: uppercase;     
+}
+.subscribe-box {
+    width: 50%;
+    border-right: 1px solid white;
+    padding: 88px 0;
+}
+.uldiv-bottom {
+    margin-top: 74px;
+}
+ul.top-space {
+    padding-top: 18px;
+}
+.bottom-lines {
+    border-top: 2px solid white;
+}
+.btm-lines {
+    display: flex;
+    justify-content: space-between;
+    max-width: 92.3%;
+}
+.miami-box {
+    padding: 88px 0px 88px 168px;
+}
+.links-icon {
+    display: flex;
+    column-gap: 22px;
+}
+li {
+    list-style: none;
+}
+
+.vedodiv-1 , .vedodiv-2 , .vedodiv-3{
+    width: 33%;
+}
+.car-video-owl {
+    display: none;
+}
+.img-owl .owl-theme .owl-nav  button[class*=owl-]:hover {
+    background: white !important;
+    color: #FFF;
+    text-decoration: none;
+}
+button.owl-prev:hover , button.owl-next:hover {
+    background: white !important;
+}
+/* added*/
+.buttons3abc {
+    display: none;
+}
+
+/* responsive */
+@media screen and ( max-width:1600px ) {
+    .news-div {
+        padding: 50px 0;
+    }
+    .pre-construct-section h2{
+        margin-top: 0;
+        margin-bottom: 55px;
+    }
+    .new-img:hover .img-4-cont h3 a::after{
+        right:-25px;
+        transition: 0.2s all ease-out;
+    }
+    .new-img:hover .arw-img::after {
+        right: -40px;
+        transition: 0.4s ease-out;
+    }
+    .new-img:hover .arw-img2::after {
+        right: -55px;
+        transition: 0.4s ease-out;
+    }
+    .new-img:hover .arw-img3::after {
+        right: -45px;
+        transition: 0.4s ease-out;
+    }
+    .new-img .arw-img::after , .new-img .arw-img2::after , .new-img .arw-img3::after  , .img-4-cont h3 a::after{
+        transition: 0.4s ease-in;
+    }
+    .newsimgcont1, .newsimgcont2, .newsimgcont3 {
+        backdrop-filter: brightness(0.3);
+    }
+    
+    .btm-lines {
+        justify-content: space-around;
+        max-width: 100%;
+    }
+    /*
+    .miami-box , .subscribe-box {
+        padding: 0px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }*/
+    .think-of-selling {
+        margin-top: 0px;
+    }
+    .img-owl .owl-theme .owl-nav {
+        margin-top: 55px;
+    }
+    .lucas-cont h2 {
+        font-size: 45px;
+        line-height: 88px;
+        margin-bottom: 53px;
+        letter-spacing: 1px; 
+    }
+    .lucas-cont br{
+        display: none;
+    }
+    .card h5 {
+        font-size: 26px;
+        line-height: 22px;
+    }
+    .btn1-rank , .btn1-search , .btn1-stats{
+        width: 32%;
+        padding: 0px 65px 40px;
+    }
+    .neighborhood-images h3 , .neighborhood-images h4 a {
+        font-size: 17px;
+        line-height: 18px;
+    }
+    .arw-img::after , .arw-img3::after {
+        right: -17px;
+        top: 0;
+    }
+    .arw-img2::after {
+        right: -33px;
+        top: 0;
+    }
+    .img-4-cont {
+        left: 20px;
+    }
+    .img-4-cont h3 a::after {
+        right: -42px;
+        bottom: 0px;
+    }
+    .news-div br , .grey-content br{
+        display: none;
+    }
+    .newsimgcont1 h4, .newsimgcont2 h4, .newsimgcont3 h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .newsimgcont1 h6, .newsimgcont2 h6, .newsimgcont3 h6 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .vedodiv-1 , .vedodiv-2 , .vedodiv-3{
+        width: 33%;
+        text-align: center;
+    }
+    .h3-heading {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 0;
+        margin: 0;
+    }
+    .grey-content h2 {
+        font-size: 45px;
+        line-height: 80px;
+    }
+    .img-div , .img-div {
+        width: 80%;
+    }
+    .grey-content p {
+        font-size: 18px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+    .logos-3 {
+        column-gap: 15px;
+    }
+    ul {
+        justify-content: center;
+    }
+    .miami-box {
+        padding: 88px 0px 88px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subscribe-box {
+        padding: 88px 80px;
+    }
+
+}
+@media screen and ( max-width:1370px ) { 
+    .think-of-selling {
+        display: flex;
+        margin-top: 20px;
+        background-blend-mode: overlay;
+        background-color: black;
+        position: relative;
+    }
+    .grey-content {
+        margin: 0;
+    }
+    .lucas-photo-cont {
+        padding: 0; 
+    }
+    .grey-div {
+        min-height: 567px;
+        margin: 40px 0 36px;
+    }
+    .icon-ham {
+        border:none;
+    }
+    .ul-toggle ul li a {
+        font-size: 25px;
+    }
+    .right-head-content-1370.aa {
+        display: none;
+    }
+    .right-head-1370 {
+        display: flex;
+        align-items: center;
+        min-width: 500px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /*header-1370*/
+    .right-head-content-1370 {
+        display: flex;
+        column-gap: 50px;
+        align-items: center;
+    }
+    .right-head-1000{
+        display: none;
+    }
+.png-imgs {
+    display: flex;
+    flex-direction: column;
+}
+.png-imgs a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+}
+/*
+@keyframes mymove {
+    50% {transform: rotateY(180deg);
+    }
+  }*/
+.png-imgs img{
+    width:90px ;
+    padding-top: 15px;
+    /*animation: mymove 5s infinite;*/
+}
+.buttons-1n2 h6 a, .buttons-3n4 h6 a {
+    font-size: 12px;
+    line-height: 18px;
+}
+    .right-head {
+        display: none;
+    }
+    .miami-box , .subscribe-box {
+        padding: 0px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .neighborhoods h2 , .pre-construct-section h2 , .div-news-heading h4 , .div-video-media-heading h4 {
+        font-size: 50px;
+    }
+   
+    .lucas-photo {
+        width: 40%;
+    }
+    .lucas-photo img {
+        width: 100%;
+        height: auto;
+    }
+    .lucas-cont {
+        width: 50%;
+    }
+    .lucas-cont h2 {
+        font-size: 35px;
+        line-height: 0px;
+        margin-bottom: 0px;
+        letter-spacing: 1px;
+        line-height: 55px;
+    }/*
+     .icon-1-img {
+        display: flex;
+        border: 1px solid white;
+        margin-top: 2px;
+        width: fit-content;
+    }
+    .buttons-1n2 , 
+    .heade-div {
+        border: none;
+    }
+    .btn-1, .btn-2, .btn-3, .btn-4 {
+        border: 1px solid white;
+        margin-top: 2px;
+    }
+    .text-condosforsale, .text-condosforrent {
+        padding: 37.5px 36px 30px 38px;
+        border: 1px solid white;
+        margin-top: 2px;
+    }
+    .heade-div {
+        display: block;
+    }
+    .right-head {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+    }*/
+    .btn1-search , .btn1-rank , .btn1-stats {
+        padding: 0px;
+        min-height: 104px;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .btn-ranking-cont {
+        left: 84px;
+        max-width: fit-content;
+    }
+    .btn-stats-cont {
+        left: 90px;
+        max-width: fit-content;
+    }
+    .btn-search-cont {
+        right: -85px;
+        max-width: fit-content;
+    }
+    .btn-search-cont::before ,  .btn-ranking-cont::before , .btn-stats-cont::before{
+        left: -64px;
+        top: inherit;
+    }
+    .btn1-search h3, .btn1-rank h3, .btn1-stats h3 {
+        font-size: 18px;
+    }
+    .btn1-search h4, .btn1-rank h4, .btn1-stats h4 {
+        font-size: 14px;
+    }
+    .miami-investment h2 a {
+        font-size: 38px;
+        line-height: 55px;
+    }
+    .neighborhood-images h3, .neighborhood-images h4 a {
+        font-size: 14px;
+    }
+    .card h5 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .newsimgcont1 h4, .newsimgcont2 h4, .newsimgcont3 h4 {
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    .newsimgcont1, .newsimgcont2, .newsimgcont3 {
+        position: absolute;
+        bottom: 0px;
+    }
+    .videos-div br{
+        display: none;
+    }
+    .grey-div2 {
+        background-color: transparent; 
+        width: 65%;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+    .img-div {
+        position: relative;
+        opacity: 0.7;
+        width: 100%;
+    }
+    .grey-content h2 {
+        font-size: 40px;
+        line-height: 80px;
+        color: white;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+    .grey-content p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .miami-box {
+        padding: 0px; 
+    }
+    .breakpoint-1370 {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .buttons3 {
+        width: 40%;
+        display: block;
+    }
+    .miami-investment {
+        padding-top: 130px;
+    }
+    .img-4-cont h3 a::after {
+        right: 0;
+        bottom: 0;
+        top: 18px;
+    }
+    .h3-heading{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}
+@media screen and ( max-width:1000px ) {
+    .img-2-news , .img-3-news{
+        margin-left: 0px; 
+        position: relative;
+        width: 50%;
+    }
+    .videos-div {
+        display: none;
+    }
+    .car-video-owl {
+        display: block;
+    }
+    .car-video-owl .vedodiv-1 , .vedodiv-2 , .vedodiv-3{
+        width: 100%;
+    }
+    .right-head-1370 {
+        min-width: auto;
+        column-gap: 60px;
+    }
+    .ul-toggle.active {
+        opacity: 1;
+        position: relative;
+        top: 0px;
+    }
+    
+    .ul-toggle ul li a{
+        font-size: 20px;
+        line-height: 72px;
+    }
+    .right-head-1000{
+        display: block;
+    }
+    .right-head-content-1370 {
+        display: flex;
+    }
+    .header {
+        min-height: 100px;
+    }
+    .grey-div {
+        margin: 50px 0  ;
+    }
+    .logos-3 {
+        column-gap: 85px;
+    }
+    .uldiv-bottom {
+        margin-top: 20px;
+    }
+    .logo-img {
+        margin-top: 60px;
+    }
+    .miami-box {
+        padding: 0px;
+        border-top: 1px solid white;
+        margin-top: 50px;
+    }
+    .subscribe-box h3 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .subscribe-box p, .subscribe-box h2 a {
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    .links-icon {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-box-bottom {
+        display: block;
+    }
+    .h4-date{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .neighborhoods h2 , .pre-construct-section h2 , .div-news-heading h4 , .div-video-media-heading h4 {
+        font-size: 50px;
+    }
+    .lucas-cont , .lucas-photo{
+        width: 100%;
+    }
+    .btn-div-lm-b {
+        margin: auto;
+    }
+    .breakpoint-1370 {
+        display: block; 
+
+    }
+    .buttons3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn1-search, .btn1-rank, .btn1-stats {
+        padding: 0px; 
+        min-height: 104px;
+        width: 80%;
+        display: block; 
+        margin: 10px 0;
+    }
+    .btn-search-cont , .btn-ranking-cont , .btn-stats-cont{
+        left: 35%;
+        right: 0;
+    }
+    .btn-search-cont::before, .btn-ranking-cont::before, .btn-stats-cont::before {
+        right: 0;
+    }
+    .miami-investment {
+        padding-top: 0px;
+    }/*
+    .buttons3abc span{
+        margin-left: 30px;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .buttons3abc span:hover{
+        margin-left: 0;
+    }*/
+    .buttons3abc {
+        display: block;
+    }
+
+    .heading1 h1 {
+        font-size: 40px;
+    }   
+    .heading0banner-h4 {
+        font-size: 15px;
+    } 
+    .heading1 {
+        min-width: 530px;
+        padding-top: 90px;
+    }
+    .miami-investment h2 a {
+        line-height: 45px;
+    } 
+    .img-4-cont , .img-1-cont , .img-2-cont , .img-3-cont{
+        left: 20px;
+    }
+    .neighborhoods {
+        padding: 0; 
+    }
+    .neighborhoods h2{
+        margin: 30px 0;
+    }
+    .neighborhood-images {
+        padding-top:0px;
+    }
+    .lucas-photo-cont {
+        display: grid;
+        justify-content: center;
+    }
+    .lucas-cont {
+        max-width: 618px;
+        margin-top: -6px;
+        text-align: center;
+    }
+    .img-owl .owl-theme .owl-nav {
+        position: absolute;
+        top: -89px;
+        right: 0px;
+        left: 0;
+    }
+    .card img {
+        min-height: 532px;
+    }
+    .images-content {
+        display: block;
+    }
+    .div-news-heading h4 , .div-video-media-heading h4 {
+        font-size: 60px;
+        line-height: 88px;
+        margin: 0px;
+    }
+    .vedodiv-1, .vedodiv-2, .vedodiv-3 {
+        width: 100%;
+    }    
+    .logos-3 img{
+        width: auto;
+    }
+    .uldiv-bottom ul li a {
+        font-size: 15px;
+    }
+    .iframe-1 {
+        min-height: 375px;
+    }
+    .car-video-owl br{
+        display: none;
+    }
+}
+@media screen and ( max-width:780px ) {
+    .bottom {
+        margin-top: 0px;
+    }
+    .car-video-owl .owl-theme .owl-nav {
+        margin-top: -40px;
+    }   
+    .miami-box, .subscribe-box {
+        align-items: flex-start;
+    }
+    .grey-div{
+        margin: 30px 0;
+    }
+    .ul-toggle ul li a {
+        font-size: 15px;
+        line-height: 63px;
+    }
+    .ul-toggle.active {
+        opacity: 1;
+        position: relative;
+    }
+    .right-head-content-1370 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+    }
+    .header {
+        min-height: 115px;
+    }
+    .right-head-1370 {
+        min-width: auto;
+        column-gap: 0px;
+    }
+    .iframe-2 {
+        min-height: 200px;
+        width: 100%;
+    }
+    .neighborhoods h2 , .pre-construct-section h2 , .div-news-heading h4 , .div-video-media-heading h4 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .video-large {
+        padding-top:0px; 
+        padding: 0 10px;
+    }
+    .right-head-content-1, .right-head-content-2 {
+        display: block;
+    }
+    .btn1-search, .btn1-rank, .btn1-stats {
+        text-align: inherit;
+    }
+    .miami-investment h2 a {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .imgs-all {
+        display: block; 
+    }
+    .img-1  , 
+    .img2-3-4 {
+        width: auto;
+    }
+    .neighborhoods h2{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .lucas-cont h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .pre-construct-section h2 {
+        font-size: 30px;
+    }
+    .div-news-heading h4 , .div-video-media-heading h4 {
+        font-size: 35px;
+        line-height: 55px;
+        margin: 0px;
+    }
+    .all-articles, .all-articles-video {
+        width: fit-content;
+        margin: auto;
+        right: 22px;
+    }
+    .news-header {
+        display: grid;
+        justify-content: center;
+    }
+    .all-articles p a, .all-articles-video p a {
+        font-size: 18px;
+         line-height: 8px; 
+    }
+    .all-articles p a::after , .all-articles-video::after {
+        top: 17px;
+    }
+    .grey-content {
+        padding: 0; 
+        margin: 0;
+    }
+    .grey-content p {
+        font-size: 15px;
+    }
+    .grey-content h2 {
+        font-size: 30px;
+    }
+    .lets-talk {
+        padding-top: 15px;
+    }
+    .body {
+        margin: 28px 28px 50px 28px;
+    }
+    .content-box-bottom {
+        display: block; 
+    }
+    .subscribe-box {
+        width: auto;
+        border-right: none; 
+        padding: 0; 
+    }
+    .subscribe-box-content {
+        padding: 20px;
+    }
+    .subscribe-box h3 {
+        font-size: 25px;
+    }
+
+    .links-icon i {
+        font-size: 35px;
+        padding-top: 0px;
+    }
+    .miami-box {
+        padding: 0px; 
+        width: 100%;
+        padding: 20px;
+    }
+    .uldiv-bottom {
+        margin-top: 24px;
+    }
+ 
+    ul.top-space {
+        padding-top: 0px;
+    }
+    .logos-3 {
+        column-gap: 0px;
+    }
+    .btm-lines h3 {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        line-height: 10px;
+    }
+    .btm-lines {
+        display: block; 
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    .bottom-lines {
+        padding: 4px;
+    }
+
+}
+@media screen and ( max-width:575px ) {
+    a.rent-a-mobile:hover , a.sale-a-mobile:hover   {
+        color: yellow;
+    }
+    .img-2-news , .img-3-news{
+        width: 100%;
+    }
+    .right-head-1370{
+        display: none;
+    }
+    .icon-ham {
+        padding: 37px 39px 7px;
+    }
+    .ul-toggle ul li a {
+        font-size: 18px;
+        line-height: 45px;
+    }
+    .ul-toggle {
+        display: block;
+        height: 130vh;
+    }
+    .hamburger-icon.a.active {
+        transform: rotate(45deg);
+        margin-top: 14px;
+    }
+    .hamburger-icon.c.active {
+        transition-delay: rotate;
+        transform: rotate(-45deg);
+        margin-top: -25px;
+    }
+    .ul-toggle.active {
+        opacity: 1;
+        position: relative;
+        top: 22px;
+    }
+    .hamburger-icon {
+        min-width: 45px;
+        min-height: 3px;
+        background-color: white;
+        margin: 9.5px 0;
+    }
+    .hhh, .icons-mobile, .right-head-content-mobile {
+        display: block;
+    }
+    .hhh {
+        position: absolute;
+        /* top: 0; */
+        left: 0;
+        bottom: 53%;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        overflow: hidden;
+        z-index: 9;
+    }
+    .header {
+        min-height: 140px;
+    }
+
+    .icon-1-img {
+        display: flex;
+        justify-content: space-between;
+    }
+    .icons-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    a.rent-a-mobile , a.sale-a-mobile {
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 16px;
+        line-height: 44px;
+        font-weight: bold;
+        color: white;
+    }
+    .icon-ham.active {
+        padding: 37px 39px 0px;
+    }
+    .logo-div-1.x {
+        display: none;
+    }
+    .right-head-1000 {
+        display: none;
+    }
+    .right-head-content-1370.aa {
+        display: none;
+    }
+    .btm-lines h3 {
+        font-size: 12px;
+    }
+    .uldiv-bottom ul li a {
+        font-size: 20px;
+    }
+    ul {
+        display: block; 
+        margin: 0;
+    }
+    .subscribe-box p, .subscribe-box h2 a {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .newsimgcont1 h4, .newsimgcont2 h4, .newsimgcont3 h4 {
+        line-height: 18px;
+        font-size: 14px;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+    }
+    .neighborhoods h2 , .pre-construct-section h2 , .div-news-heading h4 , .div-video-media-heading h4 {
+        font-size: 23px;
+        text-align: center;
+    }
+    .div-news-heading h4 , .div-video-media-heading h4 {
+        font-size: 30px;
+    }
+    .body{
+        margin: 0;
+    }
+
+    .btn-search-cont, .btn-ranking-cont, .btn-stats-cont {
+        left: 22%;
+    }
+    .iframe-1 {
+        min-height: 0;
+    }
+    .heade-div {
+        display: block;
+    }
+    .btn-1, .btn-2, .btn-3, .btn-4 ,
+    .text-condosforsale, .text-condosforrent{
+        border: none;
+        padding: 10px;
+        max-width: 299px;
+    }
+    .heading1 {
+        min-width: 298px;
+    }
+    .heading0banner-h4::after , .heading0banner-h4::before{
+        width: 15.4%;
+    }
+    .btn1-search, .btn1-rank, .btn1-stats {
+        max-width: inherit;
+        width: 100%;
+    }
+    .btn1-rank {
+        margin-left: none; 
+    }
+    .miami-investment h2 a {
+        font-size: 22px;
+        line-height: 0;
+    }
+    .images-2-div {
+        display: block; 
+    }
+    .neighborhoods h2 {
+        margin: 30px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .lucas-cont h2 {
+        font-size: 30px;
+        line-height: 50px;
+        margin: 0;
+    }
+    .lucas-cont p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .btn-div-lm-b a {
+        font-size: 19px;
+        padding: 26px 0px;
+        padding-right: 46px;
+    }
+    .btn-div-lm-b {
+        padding-left: 0px; 
+    }
+    .arw-white-box::after {
+        top: 30px;
+        right: 10px;
+        transition: 0.7s ease-in;
+    }
+    .pre-construct-section h2 {
+        font-size: 16.2px;
+        line-height: 50px;
+        margin-bottom: 0px;
+    }
+    .news-div {
+        padding:0;
+      }
+    .img2-3-flex {
+        display: block;
+    }
+    .grey-content p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .grey-content h2 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .grey-div2 {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .lets-talk-a {
+        font-size: 18px;
+        line-height: unset;
+        padding: 12px;
+        font-weight: 600;
+    }
+    .logos-3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .lets-talk-a::after {
+        right: 0px;
+        top: 14px;
+    }
+    .lets-talk-a {
+        font-size: 13px;
+        padding: 13px;
+        padding-right: 38px;
+    }
+    .all-articles p {
+        margin-bottom: 16px;
+      }
+    .lets-talk a:hover::after {
+        right: -9px;
+        transition: 0.7s ease-in;
+      }
+      .lets-talk-a::after {
+        content: '';
+        position: absolute;
+        min-width: 35px;
+        background-image: url(../images/img/arrow-white.png);
+        background-repeat: no-repeat;
+        min-height: 16px;
+        right:0px;
+        top: 14px;
+        transition: 0.7s ease-out;
+      }
+      .img-4-cont h3 a::after {
+        right: -45px;
+        bottom: 0;
+        top: 18px;
+        transition: 0.7s ease-in;
+      }
+      .new-img:hover .img-4-cont h3 a::after {
+        right: -65px;
+        transition: 0.7s ease-out;
+      }
+      .grey-div {
+        margin:0;
+      }  
+      .buttons3 {
+        padding-top: 0px;
+      } 
+      .car-owl .owl-theme .owl-nav {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 0px;
+      }   
+}
+
+
+/*added
+      
+.buttons3 span{
+	margin-left: 30px;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.buttons3 span:hover{
+	margin-left: 0;
+}*/
+header.sticky{
+    background-color: black;
+    border-bottom: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); 
+    transition: 0.5s ease-in;
+    z-index: 999;
+} /*
+.lets-talk-a span:nth-child(1) , .arw-white-box span:nth-child(1){
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right , #F1C40F ,#DC4A13);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.lets-talk-a span:nth-child(2) , .arw-white-box span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom , #F1C40F ,#DC4A13);
+    animation: animate2 2s linear infinite;
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+.lets-talk-a span:nth-child(3), .arw-white-box span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to left , #F1C40F ,#DC4A13);
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+.lets-talk-a span:nth-child(4) , .arw-white-box span:nth-child(4){
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to top , #F1C40F ,#DC4A13);
+    animation: animate4 2s linear infinite;
+}
+@keyframes animate4{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}*/
